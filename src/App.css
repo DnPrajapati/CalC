@@ -1,0 +1,78 @@
+:root{
+  /* Light Therem Color */
+  --LightBgColor: #ffffff;
+  --LightTextColor: #000000;
+  --LightOpSignColor: #52C9DC;
+  --LightOpSignTextColor: #ffffff;
+  --LightNumPadColor: #F2F8FC;
+
+  /* Dark Theme Color */
+  --DarkBgColor: #1E2435;
+  --DarkTextColor: #ffffff;
+  --DarkOpSignColor: #52C9DC;
+  --DarkOpSignTextColor: #ffffff;
+  --DarkNumPadColor: #1E2435;
+}
+
+.calculator {
+  max-width: 400px;
+  
+  border-radius: 15px!important;
+  overflow: hidden;
+}
+
+.calcTitle {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  margin: 0px;
+  background-color: var(--DarkOpSignColor);
+  color: var(--DarkTextColor);
+  cursor: context-menu;
+}
+
+.calcDisplay {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
+  padding: 5px 5%;
+  min-height: 55px;
+  background-color: var(--DarkBgColor);
+  color: var(--DarkTextColor);
+}
+.calcEquation {
+  font-size: 15px;
+  min-height: 35px;
+}
+
+.calcAnswer {
+  font-size: 30px;
+}
+
+.calcButton {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.calcButtonNum {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 180%;
+  background-color: var(--DarkNumPadColor);
+  color: var(--DarkTextColor);
+  min-height: 80px;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  cursor: pointer;
+}
+
+.calcButtonSign {
+  text-align: center;
+  background-color: var(--DarkOpSignColor);
+  color: var(--DarkOpSignTextColor);
+}
